@@ -228,6 +228,44 @@ After the inflow, you can choose exactly **one** type of good and export its ent
 
 Your task is to find the minimum number of days required to make the total combined stock of all items less than or equal to $K$ ($\le K$).
 
+### Input & Output Format
+#### Input
+* The first line contains $T$, the number of test cases.
+* For each test case, the first line contains two integers $N$ and $K$.
+* The next $N$ lines each contain two integers: $A[i]$ (initial stock) and $B[i]$ (daily inflow rate).
+
+#### Output
+For each test case, print `#t` followed by the minimum number of days required. If it's impossible, print `-1`.
+
+### Example Test Case (`small_edge.in`)
+```text
+5
+3 100
+10 5
+20 10
+5 2
+2 0
+10 10
+5 5
+1 10
+10 5
+1 5
+10 2
+3 10
+0 100
+0 200
+0 300
+```
+
+### Example Output (`small_edge.out`)
+```text
+#1 0
+#2 -1
+#3 0
+#4 1
+#5 0
+```
+
 ### Constraints
 * $1 \le N \le 10^5$
 * $0 \le K \le 10^{14}$
@@ -371,6 +409,44 @@ $$\text{Cost} = 1 \times (1 + \text{Number of goods currently loaded})$$
 * Moving $1$ block carrying $2$ goods costs $3$, and so on.
 
 The truck cannot pass through any cell containing a Tree (`1`). When visiting a warehouse, loading goods is optional. Similarly, visiting an airport does not mandate unloading. Find the maximum total number of goods that can be successfully unloaded at the airport given a maximum budget cost $C$.
+
+### Input & Output Format
+#### Input Format
+* The first line contains $T$, the number of test cases.
+* For each test case:
+  * The first line contains three integers $H$, $W$, and $C$.
+  * The next $H$ lines each contain $W$ integers representing the grid layout features.
+
+#### Output Format
+* For each test case, print a single integer representing the maximum total number of goods that can be successfully transported and unloaded at the airport within the budget $C$.
+
+### Example Test Case (`small_edge.in`)
+```text
+4
+2 2 7
+3 3
+4 2
+3 3 14
+3 0 4
+1 0 0
+0 3 2
+3 3 13
+0 0 1
+3 2 4
+3 3 0
+3 4 14
+0 0 0 1
+0 0 3 0
+1 2 1 4
+```
+
+### Example Output (`small_edge.out`)
+```text
+4
+4
+5
+5
+```
 
 ### Constraints
 * **Number of test cases:** $\le 50$
