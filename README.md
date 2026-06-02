@@ -27,7 +27,85 @@ If the turning point coordinates are given as:
 see `test_lattice_path` for the test cases
 
 The path traces line segments from $(1, 1) \rightarrow (1, 5) \rightarrow (2, 5)$. Any target point falling on these segments should be counted.
-### Solution (C++)
+### Solutions
+#### GulTion's Solution
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+
+bool checkon(vector<pair<int, int>> &a, int x, int y)
+{
+    auto range = equal_range(
+        a.begin(), a.end(),
+        make_pair(x, INT_MIN),
+        [](const auto &lhs, const auto &rhs)
+        {
+            return lhs.first < rhs.first;
+        });
+    if (range.first != range.second)
+    {
+        int b = range.first->second;
+        int c = prev(range.second)->second;
+        return b <= y && c >= y;
+    }
+    return false;
+}
+
+int solve(
+    vector<int> &tx,
+    vector<int> &ty,
+    vector<int> &tnx,
+    vector<int> &tny)
+{
+    vector<pair<int, int>> tx_y(tnx.size()), ty_x(tny.size());
+    for (size_t i = 0; i < tx_y.size(); i++)
+    {
+        tx_y[i] = make_pair(tnx[i], tny[i]);
+        ty_x[i] = make_pair(tny[i], tnx[i]);
+    }
+
+    sort(tx_y.begin(), tx_y.end(), [](auto a, auto b)
+         {
+        if(a.first==b.first){
+            return a.second<b.second;
+        }
+        return a.first<b.first; });
+
+    sort(ty_x.begin(), ty_x.end(), [](auto a, auto b)
+         {
+        if(a.first==b.first){
+            return a.second<b.second;
+        }
+        return a.first<b.first; });
+
+    int sum = 0;
+    for (int i = 0; i < tx.size(); i++)
+    {
+        sum += (checkon(tx_y, tx[i], ty[i]) || checkon(ty_x, ty[i], tx[i]));
+    }
+
+    return sum;
+}
+
+int main()
+{
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        int n, m;
+        cin >> n >> m;
+        vector<int> tx(n), ty(n), tnx(m), tny(m);
+        for (auto &i : tx) cin >> i;
+        for (auto &i : ty) cin >> i;
+        for (auto &i : tnx) cin >> i;
+        for (auto &i : tny) cin >> i;
+
+        cout << solve(tx, ty, tnx, tny) << "\n";
+    }
+}
+```
+#### Other Solution
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
