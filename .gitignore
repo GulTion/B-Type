@@ -1,0 +1,6 @@
+*.cpp
+.obsidian
+*.docx
+generator
+solution
+back.md
