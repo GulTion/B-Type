@@ -12,9 +12,11 @@ views:
       - test id
       - ques id
     sort:
+      - property: Test Case Folder
+        direction: ASC
       - property: done?
         direction: DESC
     columnSize:
       file.name: 285
-      note.tags: 452
+      note.tags: 417
       note.test id: 83

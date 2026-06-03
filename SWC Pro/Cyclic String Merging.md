@@ -16,6 +16,17 @@ You can continue chain-merging multiple strings sequentially. The objective is t
 * $1 \le N \le 10^5$
 * Individual string lengths $\le 10$
 
+### Input / Output Format
+
+**Input Format:**
+* The first line contains an integer $T$, the number of test cases.
+* For each test case:
+  * The first line contains an integer $N$, the number of strings.
+  * The second line contains $N$ space-separated strings consisting of digits/characters.
+
+**Output Format:**
+* For each test case, print a single integer representing the maximum possible length of a valid final cyclic merged string. If no valid chain can be formed, print `0`.
+
 ### Examples
 
 #### Example 1
@@ -39,6 +50,30 @@ arr = ["14", "15", "89", "22"]
 2
 ```
 **Explanation:** Only `"22"` satisfies the condition natively.
+
+---
+
+### Sample Test Cases
+
+#### sample.in
+```text
+3
+6
+14 123 323 321 421 535
+4
+14 15 89 22
+3
+12 21 99
+```
+
+#### sample.out
+```text
+9
+2
+3
+```
+
+---
 
 ### Solution (C++)
 
