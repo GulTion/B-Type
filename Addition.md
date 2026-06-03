@@ -10,16 +10,16 @@
 ### 1. Segment Trees & Range Queries
 * [x] LeetCode 307: Range Sum Query - Mutable
 * [ ] LeetCode 308: Range Sum Query 2D - Mutable
-* [ ] Codeforces: Classic Segment Tree Track (Edu Course)
+* [ ] Codeforces: Classic Segment Tree Track (Edu Course) [link](https://codeforces.com/blog/entry/22616)
 * [ ] Codeforces 339D: Xenia and Bitwise Operations
 
 ### 2. Design Problems & State DP
-* [ ] LeetCode 123: Best Time to Buy and Sell Stock III
-* [ ] LeetCode 188: Best Time to Buy and Sell Stock IV
+* [x] LeetCode 123: Best Time to Buy and Sell Stock III
+* [x] LeetCode 188: Best Time to Buy and Sell Stock IV
 * [ ] LeetCode 146: LRU Cache
 * [ ] LeetCode 432: All O`one Data Structure
-* [ ] https://leetcode.com/problem-list/mlgrvx7d/
-* [ ] https://leetcode.com/problem-list/2chw7ar7/
+* [ ] [DP (decision making)](https://leetcode.com/problem-list/mlgrvx7d/)
+* [ ] [digit DP](https://leetcode.com/problem-list/2chw7ar7/)
 
 ### 3. Shortest Paths & Graph Traversals
 * [ ] LeetCode 787: Cheapest Flights Within K Stops

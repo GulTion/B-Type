@@ -1,4 +1,7 @@
-## Test 5 - Q2: Optimal Threshold Score Difference
+---
+test id: "5"
+ques id: "2"
+---
 
 ### Problem Description
 You are given two arrays $A$ and $B$ of size $N$. You need to choose an integer threshold $D$. The performance score of any element $x$ in either array is evaluated using the following rule:

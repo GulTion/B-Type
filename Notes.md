@@ -1,1 +1,3 @@
-- [[Segment Tree]]
+- [[Notes/Segment Tree|Segment Tree]]
+- [[Digit DP]]
+- 

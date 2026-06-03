@@ -1,4 +1,7 @@
-## Test 5 - Q1: Cyclic String Merging
+---
+test id: "5"
+ques id: "1"
+---
 
 ### Problem Description
 You are given an array of strings. You can merge two strings $\text{arr}[i]$ and $\text{arr}[j]$ into a single combined string if and only if:

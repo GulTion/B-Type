@@ -1,4 +1,12 @@
-## Test 3: Balanced Stone Necklace
+---
+test id: "3"
+ques id: "1"
+done?: true
+tags:
+  - dp
+  - hash_map
+  - prefix_sum
+---
 
 ### Problem Description
 You are given a necklace represented as a string consisting only of red ('R') and blue ('B') stones. Your task is to make the number of blue stones and red stones remaining in the necklace exactly equal.

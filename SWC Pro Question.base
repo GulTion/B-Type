@@ -1,0 +1,20 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.inFolder("SWC Pro")
+        - file.ext == "md"
+    order:
+      - done?
+      - file.name
+      - tags
+      - test id
+      - ques id
+    sort:
+      - property: done?
+        direction: DESC
+    columnSize:
+      file.name: 285
+      note.tags: 452
+      note.test id: 83

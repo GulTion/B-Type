@@ -1,6 +1,9 @@
 ---
 tags:
   - digit_dp
+test id: "7"
+ques id: "2"
+done?: true
 ---
 ### Problem Description
 A company issues customized gift certificates every day. The printing system mandates a strict set of rules to validate issued certificates:

@@ -1,4 +1,13 @@
-## Test 1: Points on Lattice Path
+---
+test id: "1"
+ques id: "1"
+done?: true
+tags:
+  - binary_search
+  - upper_bound
+  - lower_bound
+  - greedy
+---
 
 ### Problem Description
 You are given a path on an infinite 2D lattice. The path starts from a fixed position and consists of line segments parallel to either the $x$-axis or $y$-axis, moving sequentially through a set of turning points. 

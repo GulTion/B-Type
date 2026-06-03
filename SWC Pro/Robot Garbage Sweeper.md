@@ -1,4 +1,10 @@
-## Test 7 - Q1: Robot Garbage Sweeper
+---
+test id: "7"
+ques id: "1"
+done?: true
+tags:
+  - dp
+---
 
 ### Problem Description
 You are given an array representing a sequence of trash values, where each element at index $i$ indicates the volume of garbage located there.

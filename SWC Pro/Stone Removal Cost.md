@@ -1,4 +1,7 @@
-## Test 4 - Q3: Stone Removal Cost
+---
+test id: "4"
+ques id: "3"
+---
 
 ### Problem Description
 You are given a sequence of stones that need to be completely cleared out. Removing a stone incurs a cost depending on its current adjacent neighbors at the time of removal:

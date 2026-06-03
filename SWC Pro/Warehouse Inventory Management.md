@@ -1,4 +1,8 @@
-## Test 2: Warehouse Inventory Management
+---
+test id: "2"
+ques id: "1"
+tags:
+---
 
 ### Problem Description
 You are in charge of maintaining inventory for a warehouse containing $N$ different goods. You have an initial stock of goods given by an array $A$ of size $N$.

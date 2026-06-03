@@ -1,5 +1,7 @@
-## Test 4 - Q2: Tile Selection Minimization
-
+---
+test id: "4"
+ques id: "2"
+---
 ### Problem Description
 Given $N$ geometric tiles, where each tile has a specified width and height. You need to select exactly $K$ tiles out of the $N$ available. 
 

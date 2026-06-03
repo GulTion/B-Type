@@ -1,4 +1,11 @@
-## Test 6: Q1-Simultaneous Car Rendezvous
+---
+test id: "6"
+ques id: "1"
+done?: true
+tags:
+  - math
+  - greedy
+---
 
 ### Problem Description
 There are $N$ cars parked at separate initial coordinates on an $x$-$y$ cartesian plane. All initial coordinates reside inside a bounded square region extending from $(-M, -M)$ to $(M, M)$.
@@ -40,6 +47,35 @@ Find the minimum number of drives required for all cars to land on $(p, q)$ simu
 **Output:**
 ```text
 -1
+```
+
+### Input Format
+* The first line contains an integer $T$, the number of test cases.
+* For each testcase:
+  * The first line contains two integers $N$ and $M$.
+  * The second line contains two integers $p$ and $q$, representing the target coordinates.
+  * The next $N$ lines each contain two integers $x$ and $y$, representing the initial coordinates of a car.
+
+### Output Format
+* For each testcase, print `# C Ans` where `C` is the testcase number starting from 1, and `Ans` is the minimum number of drive steps required, or `-1` if it is impossible.
+
+### Sample Input
+```text
+2
+2 10
+1 1
+2 3
+-4 1
+2 10
+0 0
+0 1
+0 2
+```
+
+### Sample Output
+```text
+# 1 5
+# 2 -1
 ```
 
 ### Solution
