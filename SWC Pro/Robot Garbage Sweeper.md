@@ -1,7 +1,7 @@
 ## Test 7 - Q1: Robot Garbage Sweeper
 
 ### Problem Description
-You are given an array representing a sequence of trash values, where each element at index $i$ indicates the volume of garbage located there. 
+You are given an array representing a sequence of trash values, where each element at index $i$ indicates the volume of garbage located there.
 
 The operations run under the following mechanics:
 * A specialized robot cleaner can be newly deployed at any index $i$ by spending a flat fee $m$.
@@ -10,8 +10,30 @@ The operations run under the following mechanics:
 
 Find the minimum total operational cost required to clean all garbage fields. You are allowed to deploy any number of robots at any index layout.
 
-// 3 1 4 1 5 
-// m = 2 -> 8
+### Input Format
+* The first line contains $T$, the number of test cases.
+* For each test case, the first line contains two integers $N$ (the number of garbage fields) and $M$ (the robot deployment fee).
+* The second line contains $N$ integers representing the garbage volumes $A[i]$.
+
+### Output Format
+* For each test case, output a single integer representing the minimum total operational cost required to clean all garbage fields.
+
+### Sample Input
+```text
+2
+20 100
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+5 50
+10 20 30 40 50
+```
+
+### Sample Output
+```text
+290
+210
+```
+
+
 
 ```cpp
 #include <bits/stdc++.h>

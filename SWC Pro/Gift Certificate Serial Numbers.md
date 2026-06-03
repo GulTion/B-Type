@@ -1,5 +1,7 @@
-## Test 7 - Q2: Gift Certificate Serial Numbers
-
+---
+tags:
+  - digit_dp
+---
 ### Problem Description
 A company issues customized gift certificates every day. The printing system mandates a strict set of rules to validate issued certificates:
 * Each certificate contains a unique identification serial number composed solely of digits ($0$-$9$).
@@ -60,33 +62,50 @@ As the answer can be extremely large, return the total count modulo $10^9 + 7$.
 #include <bits/stdc++.h>
 using namespace std;
 
-const int MOD = 1e9 + 7;
-
-int solve(int pos, int remSum, bool tight, const string &A, vector<vector<vector<int>>> &dp) {
-    if (remSum < 0) return 0;  // If remaining sum is negative, return 0
-    if (pos == A.size()) return remSum == 0;  // Check if sum is exactly S
-
-    if (dp[pos][remSum][tight] != -1) return dp[pos][remSum][tight];
-
-    int limit = tight ? (A[pos] - '0') : 9;
-    int ans = 0;
-
-    for (int digit = 0; digit <= limit; digit++) {
-        ans = (ans + solve(pos + 1, remSum - digit, tight && (digit == limit), A, dp)) % MOD;
+long long dp[101][2][1001];
+string num;
+long long dfs(int idx, bool tight, int curr_sum, int tar_sum)
+{
+    // base
+    if (idx == num.length())
+    {
+        return curr_sum == tar_sum;
+    }
+    // mem return
+    if (!tight && dp[idx][tight][curr_sum] != -1)
+    {
+        return dp[idx][tight][curr_sum];
     }
 
-    return dp[pos][remSum][tight] = ans;
+    int limit = tight ? (num[idx] - '0') : 9;
+    long long sum = 0LL;
+    for (int i = 0; i <= limit; i++)
+    {
+        bool new_tight = tight && i == limit;
+        sum += dfs(idx + 1, new_tight, curr_sum + i, tar_sum);
+    }
+    if (!tight)
+        dp[idx][tight][curr_sum] = sum;
+    return sum;
 }
 
-int main() {
-    string A;
-    int S;
-    cin >> A >> S;
+long long solve(string A, int S)
+{
+    memset(dp, -1, sizeof(dp));
+    num = A;
+    return dfs(0, true, 0, S);
+}
 
-    int n = A.size();
-    vector<vector<vector<int>>> dp(n + 1, vector<vector<int>>(S + 1, vector<int>(2, -1)));
-
-    cout << solve(0, S, 1, A, dp) << endl;
-    return 0;
+int main()
+{
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        string A;
+        int S;
+        cin >> A >> S;
+        cout << solve(A, S) << endl;
+    }
 }
 ```

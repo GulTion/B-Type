@@ -18,6 +18,8 @@
 * [ ] LeetCode 188: Best Time to Buy and Sell Stock IV
 * [ ] LeetCode 146: LRU Cache
 * [ ] LeetCode 432: All O`one Data Structure
+* [ ] https://leetcode.com/problem-list/mlgrvx7d/
+* [ ] https://leetcode.com/problem-list/2chw7ar7/
 
 ### 3. Shortest Paths & Graph Traversals
 * [ ] LeetCode 787: Cheapest Flights Within K Stops
@@ -46,3 +48,11 @@
 * [ ] **Session 1:** LeetCode 410, LeetCode 875
 * [ ] **Session 2:** LeetCode 123, LeetCode 188
 * [ ] **Session 3:** LeetCode 51, LeetCode 52, LeetCode 37
+
+
+
+
+* **LeetCode 410** – Split Array Largest Sum *(Pattern: Contiguous Array Partitioning / 1D Segment Allocation)*
+* **LeetCode 813** – Largest Sum of Averages *(Pattern: Continuous Partitioning with Boundary Context Tracking)*
+* **LeetCode 1547** – Minimum Cost to Cut a Stick *(Pattern: Segment Splitting & Boundary-Dependent Cost Evaluation)*
+* **LeetCode 312** – Burst Balloons *(Pattern: Boundary-Constrained Subproblem Optimization)
