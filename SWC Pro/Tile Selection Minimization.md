@@ -7,6 +7,7 @@ tags:
   - binary_search
   - segment_tree
   - sliding_window
+  - review
 id: tile_selection
 ---
 ### Problem Description

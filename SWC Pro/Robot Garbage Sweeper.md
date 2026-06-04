@@ -102,7 +102,7 @@ What are the Steps for the robot sweeper problem?
 4. solve function have three condition
 	1. **Base Condition**: $\text{if } in = n \implies 0$
 	2. **Memoization Condition**: $\text{if } dp[in][l] \neq -1 \implies dp[in][l]$
-	3. **Transition Choices**: $$dp[in][l] = \min \Big( m + solve(in+1, in), \, (in - l) \cdot A[in] + solve(in+1, l) \Big)$$
+	3. **Transition Choices**: $$dp[in][l] = \min \Big( m + solve(in+1, in), (in - l) \cdot A[in] + solve(in+1, l) \Big)$$
 
 
 	
