@@ -3,12 +3,12 @@ test id: "3"
 ques id: "1"
 done?: true
 tags:
-  - dp
   - hash_map
   - prefix_sum
   - review
-Test Case Folder:
-review: "#review"
+sr-due: 2026-06-08
+sr-interval: 4
+sr-ease: 270
 ---
 
 ### Problem Description

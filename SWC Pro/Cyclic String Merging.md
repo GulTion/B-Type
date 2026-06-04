@@ -1,6 +1,7 @@
 ---
 test id: "5"
 ques id: "1"
+id: string_merging
 ---
 
 ### Problem Description

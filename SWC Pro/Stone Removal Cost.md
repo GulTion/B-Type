@@ -10,7 +10,6 @@ You are given a sequence of stones that need to be completely cleared out. Remov
 * **Zero cost** ($0$) if it has no neighbors left.
 
 Each individual stone has its own distinct cost parameters for each neighbor condition. Find the minimum total cost required to remove all stones from the sequence.
-
 ### Solution
 ```cpp
 #include <iostream>

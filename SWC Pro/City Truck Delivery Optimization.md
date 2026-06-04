@@ -6,7 +6,6 @@ tags:
   - bfs
   - review
 ---
-
 ### Problem Description
 There is a 2D matrix grid of size $H \times W$ representing a city map. Each cell in the grid represents a specific feature designated by an integer code:
 * `0` $\rightarrow$ Road
