@@ -11,11 +11,11 @@ Test 4:
 3. [Stone Removal Cost](SWC%20Pro/Stone%20Removal%20Cost.md)
 
 Test 5:
-4. [Cyclic String Merging](SWC%20Pro/Cyclic%20String%20Merging.md)
-5. [Optimal Threshold Score Difference](SWC%20Pro/Optimal%20Threshold%20Score%20Difference.md)
+1. [Cyclic String Merging](SWC%20Pro/Cyclic%20String%20Merging.md)
+2. [Optimal Threshold Score Difference](SWC%20Pro/Optimal%20Threshold%20Score%20Difference.md)
 
 Test 6: [Simultaneous Car Rendezvous](SWC%20Pro/Simultaneous%20Car%20Rendezvous.md) 
 
 Test 7:
-6. [Robot Garbage Sweeper](SWC%20Pro/Robot%20Garbage%20Sweeper.md) 
-7. [Gift Certificate Serial Numbers](SWC%20Pro/Gift%20Certificate%20Serial%20Numbers.md) 
+1. [Robot Garbage Sweeper](SWC%20Pro/Robot%20Garbage%20Sweeper.md) 
+2. [Gift Certificate Serial Numbers](SWC%20Pro/Gift%20Certificate%20Serial%20Numbers.md) 
