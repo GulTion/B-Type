@@ -5,6 +5,9 @@ done?: true
 tags:
   - bfs
   - review
+sr-due: 2026-06-07
+sr-interval: 3
+sr-ease: 250
 ---
 ### Problem Description
 There is a 2D matrix grid of size $H \times W$ representing a city map. Each cell in the grid represents a specific feature designated by an integer code:
