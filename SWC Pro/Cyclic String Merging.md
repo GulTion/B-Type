@@ -4,13 +4,13 @@ ques id: "1"
 ---
 
 ### Problem Description
-You are given an array of strings. You can merge two strings $\text{arr}[i]$ and $\text{arr}[j]$ into a single combined string if and only if:
+You are given an array of strings. You can merge two strings $\text{arr}[i]$ and $\text{arr}[j]$ into a single combined string if and only if: 
 1. $i < j$
 2. The last character of $\text{arr}[i]$ is equal to the first character of $\text{arr}[j]$.
 
 For example, merging `"123"` and `"389"` results in `"123389"`.
 
-You can continue chain-merging multiple strings sequentially. The objective is to form a valid **final** string such that its first character matches its ultimate last character. Find the maximum possible length of such a valid final string.
+You can continue chain-merging multiple strings sequentially. The objective is to form a valid **final** string such that its first character matches its ultimate last character. Find the maximum possible length of such a valid final string. 
 
 ### Constraints
 * $1 \le N \le 10^5$
@@ -26,7 +26,6 @@ You can continue chain-merging multiple strings sequentially. The objective is t
 
 **Output Format:**
 * For each test case, print a single integer representing the maximum possible length of a valid final cyclic merged string. If no valid chain can be formed, print `0`.
-
 ### Examples
 
 #### Example 1

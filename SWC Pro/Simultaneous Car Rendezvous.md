@@ -5,6 +5,11 @@ done?: true
 tags:
   - math
   - greedy
+  - review
+id: car_simultaneous
+sr-due: 2026-06-07
+sr-interval: 3
+sr-ease: 250
 ---
 
 ### Problem Description
@@ -132,6 +137,7 @@ void solve(){
 
 	// if the parity of the distance array is 1 and the turns is also 1 then in the next turn it will be even.
 	// we cannot filp in even turns, so we need 2 extra turns.
+	
 	if(a[0] && turns & 1)
 		cout << turns + 2 << "\n";
 
@@ -159,3 +165,46 @@ int main(){
 }
 ```
 ---
+
+#flashcards/car_simultaneous
+What is formula to get number of drives if you have maximum distance from car to rendezvous point?
+?
+$$
+turns = \frac{\lceil \sqrt{1+8x}-1 \rceil} {2}
+$$
+
+#flashcards/car_simultaneous 
+What are the conditions for the getting final turns ?
+?
+$$
+result = \begin{cases}
+turns+2 & \text{if } a[0] \text{ and turn are odd} \\
+turn+1 & \text{if } a[0] \text{ is odd} \\
+turn & \text{if others}
+\end{cases}
+$$
+
+
+#flashcards/car_simultaneous 
+What is the steps for the car simultaneous problem?
+?
+1. calculate Manhattan distance for each car from rendezvous point to car position using formula as below in array $a$.  
+2. find the distance of the car which is far from the rendezvous point and call it as $x$
+3. calculate turn 1+2+3+....+turns = $x$, using quadratic equation, as   $turns = \frac{\lceil \sqrt{1+8x}-1 \rceil} {2}$
+4. transform array $a$ into parity array, also check if each element in $a$ is same else return 0
+5. use conditions to return result as following $$ result = \begin{cases}
+turns+2 & \text{if } a[0] \text{ and turn are odd} \\
+turn+1 & \text{if } a[0] \text{ is odd} \\
+turn & \text{if others}
+\end{cases}$$
+
+
+#flashcards/car_simultaneous 
+What is formula to calculate the distance from rendezvous point to all cars?
+?
+$$
+  \begin{split}
+a[i] = {} & \lvert \max(p, x) - \min(p, x) \rvert \\
+& + \lvert \max(q, y) - \min(q, y) \rvert
+\end{split} $$
+

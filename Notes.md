@@ -1,2 +1,4 @@
 - [Segment Tree](Notes/Segment%20Tree.md)
 - [Digit DP](Notes/Digit%20DP.md)
+- [Upper & Lower Bounds](Notes/Upper%20&%20Lower%20Bounds.md)
+- 

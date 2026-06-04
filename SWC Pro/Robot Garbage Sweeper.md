@@ -4,8 +4,12 @@ ques id: "1"
 done?: true
 tags:
   - dp
+  - review
+id: robot_sweeper
+sr-due: 2026-06-07
+sr-interval: 3
+sr-ease: 250
 ---
-
 ### Problem Description
 You are given an array representing a sequence of trash values, where each element at index $i$ indicates the volume of garbage located there.
 
@@ -73,4 +77,32 @@ int main() {
 }
 ```
 
----
+#flashcards/robot_sweeper
+What are the Conditions for the Solve function?
+?
+#### 1. Base Condition
+$$\text{if } in = n \implies 0$$
+#### 2. Memoization Condition
+$$\text{if } dp[in][l] \neq -1 \implies dp[in][l]$$
+#### 3. Transition Choices
+$$dp[in][l] = \min \Big( m + solve(in+1, in), \, (in - l) \cdot A[in] + solve(in+1, l) \Big)$$
+
+#flashcards/robot_sweeper 
+What are the running code for robot sweeper?
+?
+$$m+solve(i+1, i)$$that means that we are deploying robot at index 0, and we have to find solution for $i+1$.
+
+
+#flashcards/robot_sweeper 
+What are the Steps for the robot sweeper problem?
+?
+1. find the index $i$ of first non-zero trash in the array.
+2. if $i==n$ return 0 else use running condition $m+solve(i+1, i)$ at index $i$.
+3. $solve(in, l)$ means, we are at index $in$, and we are deployed robot at index $l$.
+4. solve function have three condition
+	1. **Base Condition**: $\text{if } in = n \implies 0$
+	2. **Memoization Condition**: $\text{if } dp[in][l] \neq -1 \implies dp[in][l]$
+	3. **Transition Choices**: $$dp[in][l] = \min \Big( m + solve(in+1, in), \, (in - l) \cdot A[in] + solve(in+1, l) \Big)$$
+
+
+	
