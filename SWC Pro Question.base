@@ -11,11 +11,12 @@ views:
       - tags
       - test id
       - ques id
+      - sr-due
     sort:
-      - property: Test Case Folder
+      - property: test id
         direction: ASC
-      - property: done?
-        direction: DESC
+      - property: ques id
+        direction: ASC
     columnSize:
       file.name: 285
       note.tags: 417

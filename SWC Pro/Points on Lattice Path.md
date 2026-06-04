@@ -8,6 +8,9 @@ tags:
   - lower_bound
   - greedy
   - review
+sr-due: 2026-06-08
+sr-interval: 4
+sr-ease: 270
 ---
 
 ### Problem Description

@@ -10,6 +10,9 @@ tags:
   - review
 id: tile_selection
 done?: true
+sr-due: 2026-06-05
+sr-interval: 1
+sr-ease: 230
 ---
 ### Problem Description
 Given $N$ geometric tiles, where each tile has a specified width and height. You need to select exactly $K$ tiles out of the $N$ available. 

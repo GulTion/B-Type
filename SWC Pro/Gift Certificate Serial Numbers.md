@@ -5,6 +5,9 @@ tags:
 test id: "7"
 ques id: "2"
 done?: true
+sr-due: 2026-06-08
+sr-interval: 4
+sr-ease: 270
 ---
 ### Problem Description
 A company issues customized gift certificates every day. The printing system mandates a strict set of rules to validate issued certificates:
