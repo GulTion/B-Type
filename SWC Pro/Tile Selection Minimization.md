@@ -44,7 +44,15 @@ $$\text{Difference} = \max(|H_i - H_j|, |W_i - W_j|)$$
 ```
 
 #### Solution
-##### for high contrains
+##### Code 1 Constraints (Segment Tree + Sweep-line)
+**$N$ (Number of tiles):** $1 \le N \le 10^5$ (up to $2 \times 10^5$).
+**Coordinates ($X, Y$ or $H_i, W_i$):** $0 \le X, Y \le 10^9$.
+##### Code 2 Constraints (2D Prefix Sum)
+**$N$ (Number of tiles):** $1 \le N \le 10^6$ (or higher).
+**Coordinates ($X, Y$ or $H_i, W_i$):** $0 \le X, Y \le 400$.
+
+
+#### Code 1 
 ```cpp
 #include <iostream>
 #include <vector>
@@ -188,7 +196,7 @@ int main() {
     return 0;
 }
 ```
-##### for less contraints
+#### Code 2
 ```cpp
 #include <iostream>
  #include <vector>
