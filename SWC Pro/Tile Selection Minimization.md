@@ -266,7 +266,7 @@ This algorithm finds the minimum side length $D$ of an axis-aligned square that 
 * $N$: Total number of available tiles/points.
 * $K$: Number of tiles/points to select.
 * $P$: A list of points where $P_i = (X_i, Y_i)$.
-**Output:** * $D$: The minimum maximum difference (smallest bounding square side length).
+**Output:**  $D$: The minimum maximum difference (smallest bounding square side length).
 ### **Step 1: Handle Edge Cases**
 If $K = 1$, the minimum difference is strictly $0$ because a single tile compared to itself yields a difference of $0$.
 * **If** $K == 1$:
