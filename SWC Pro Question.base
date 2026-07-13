@@ -13,6 +13,8 @@ views:
       - ques id
       - sr-due
     sort:
+      - property: done?
+        direction: ASC
       - property: test id
         direction: ASC
       - property: ques id
